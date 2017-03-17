@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'weather';
+  src: url('../../fonts/artill_clean_icons-webfont.eot');
+  src: url('../../fonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/artill_clean_icons-webfont.woff') format('woff'),
+    url('../../fonts/artill_clean_icons-webfont.ttf') format('truetype'),
+    url('../../fonts/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  font-family: weather;
+  font-size: 150px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+  text-transform: none;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+.weather {
+  color: #839496;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.weather-location {
+  font-size: 36px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.weather-region {
+  color: #93a1a1;
+}
+
+.weather-forecast {
+  display: table;
+  margin: 50px auto;
+}
+
+.weather-forecast-day {
+  float: left;
+  list-style: none;
+  margin-right: 50px;
+  width: 130px;
+  text-transform: uppercase;
+}
+
+.weather-forecast-day:first-child {
+  color: #93a1a1;
+  font-size: 200%;
+  font-weight: bold;
+  margin-top: -60px;
+}
+
+.weather-forecast-day:first-child .weather-icon {
+  font-size: 200px;
+}
+
+.weather-temp-max {
+  font-weight: 800;
+  margin-right: 5px;
+}
+
+.weather-temp-min {
+  font-weight: 200;
+  margin-left: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .clock {
+    font-size: 20vw;
+  }
+
+  .clock-separator {
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 0 2vw;
+  }
+
+  .date,
+  .weather-location {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 1601px) {
+  .weather-forecast-day {
+    display: none;
+  }
+
+  .weather-forecast-day:first-child {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 769px) {
+  .weather-forecast-day:nth-child(2) {
+    display: inline-block;
+  }
+
+  .weather-forecast-day:nth-child(3) {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1201px) {
+  .weather-forecast-day:nth-child(4) {
+    display: inline-block;
+  }
+
+  .weather-forecast-day:nth-child(5) {
+    display: inline-block;
+  }
+}

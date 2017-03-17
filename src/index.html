@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link href="style.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body ng-app="Start" ng-controller="MasterCtrl">
+    <div class="container-buttons">
+      <button class="btn btn-default" ng-click="toggleConfig();" ng-show="!config">
+        <i class="fa fa-cog fa-4x"></i>
+      </button>
+      <button class="btn" ng-click="save()" ng-show="config">
+        <i class="fa fa-save fa-4x"></i>
+      </button>
+    </div>
+    <div class="container" ng-class="{ 'container-enabled': !config }">
+      <clock ng-model="clock"></clock>
+      <weather ng-model="weather"></weather>
+    </div>
+    <div class="container container-config" ng-class="{ 'container-enabled': config }">
+      <div class="container-section">
+        <h3 class="container-section-header">Clock</h3>
+        <div class="form-group">
+          <input id="clock" name="clock" ng-model="clock.config.enabled" type="checkbox">
+          <label for="clock">Clock</label>
+        </div>
+        <div class="form-group">
+          <input id="seconds" name="seconds" ng-disabled="!clock.config.enabled" ng-model="clock.config.seconds" type="checkbox">
+          <label for="seconds">Seconds</label>
+        </div>
+        <div class="form-group">
+          <input id="date" name="date" ng-model="clock.config.date" type="checkbox">
+          <label for="date">Date</label>
+        </div>
+      </div>
+      <div class="container-section">
+        <h3 class="container-section-header">Weather</h3>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input id="location" placeholder="Madrid, Spain" ng-model="weather.config.location" type="text">
+        </div>
+        <label>Forecast (days)</label>
+        <div class="form-group radio">
+          <input id="days-1" name="days" ng-model="weather.config.days" type="radio" value="1">
+          <label for="days-1">1 day</label>
+        </div>
+        <div class="form-group radio">
+          <input id="days-3" name="days" ng-model="weather.config.days" type="radio" value="3">
+          <label for="days-3">3 days</label>
+        </div>
+        <div class="form-group radio">
+          <input id="days-5" name="days" ng-model="weather.config.days" type="radio" value="5">
+          <label for="days-5">5 days</label>
+        </div>
+        <div class="form-group radio">
+          <input id="days-7" name="days" ng-model="weather.config.days" type="radio" value="7">
+          <label for="days-7">7 days</label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.min.js" type="text/javascript"></script>
+</html>

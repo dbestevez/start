@@ -1,0 +1,35 @@
+.clock {
+  color: #839496;
+  display: table;
+  text-align: center;
+  font-size: 10vw;
+  font-weight: 100;
+  margin: 50px auto 0;
+}
+
+.clock-separator {
+  font-size: 5vw;
+  font-weight: bold;
+  margin: 0 2vw;
+}
+
+.date {
+  color: #839496;
+  display: table;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 100;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.date-month {
+  margin-right: 10px;
+}
+
+.date-year {
+  color: #93a1a1;
+  font-weight: bold;
+  text-align: center;
+  width: 500px;
+}
